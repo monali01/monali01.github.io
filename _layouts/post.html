@@ -1,0 +1,33 @@
+---
+layout: default-post
+---
+<section class="bg-primary" id="about" itemtype="http://schema.org/BlogPosting">
+   <div class="container">
+      <div class="row">
+         <div class="col-lg-8 col-lg-offset-2">
+            <h2 class="section-heading" itemprop="name headline">{{ page.title }}</h2>
+            <hr align="left" class="light">
+            <p class="text-faded">{{ page.description }}</p>
+
+            <p class="post-meta">
+               <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
+               {% if page.author %} • 
+                  <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                     <span itemprop="name">{{ page.author }}</span>
+                  </span>
+               {% endif %}
+            </p>
+         </div>
+      </div>
+   </div>
+</section>
+
+<section>
+   <div class="container" itemprop="articleBody">
+      <div class="row">
+         <div class="col-md-8 col-md-offset-2">
+            {{ content }}
+         </div>
+      </div>
+   </div>
+</section>
