@@ -1,12 +1,12 @@
 # Site settings
 title:
-email: battery4cid@gmail.com
+email: monali.patel0192@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
 
-twitter_username: thequietlattice
-github_username: batteryacid
+twitter_username: ""
+github_username: monali01
 
 # Build settings
 markdown: kramdown
